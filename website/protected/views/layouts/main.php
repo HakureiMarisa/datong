@@ -147,23 +147,6 @@
             </div>
             <div id="TopNavigation_v2c" style="top: 80px;">
                 <ul id="jsddm">
-                
-                    <?php var_dump($menus);die();?>
-                    <?php foreach ($menus as $menu):?>
-                        <li class="butt_Support">
-                            <a href="javascript:;" class="secondtwolinks menu-link"><?php echo $menu->name?> <span class="arrow-down">∨</span></a>
-                            <?php if($menu->menus):?>
-                            <ul>
-                                <div class="bottom_cap hover-content" style="top: 17px; border: none;">
-                                    <li><a href="http://www.alienware.com/support/">Alienware Gaming Services</a></li>
-                                    <li class="butt_My_Hive"><a href="http://support.alienware.com/Profile/Login.aspx?ReturnUrl=%2fSupport_Pages%2fRestricted_Pages%2fmyhive.aspx">My Hive</a></li>
-                                    <li class="butt_Support_Area"><a href="http://www.alienware.com/support_redirect.html">Support Area</a></li>
-                                    <li class="butt_Drivers_and_Downloads"><a href="http://support.alienware.com/Support_Pages/Restricted_Pages/driver_downloads.aspx">Drivers &amp; Downloads</a></li>
-                                </div>
-                            </ul>
-                            <?php endif;?>
-                        </li>
-                    <?php endforeach;?>
                     <li class="butt_Products"><a href="javascript:;" class="firsttwolinks menu-link">PRODUCTS <span class="arrow-down">∨</span></a>
                         <ul>
                             <div class="bottom_cap hover-content" style="top: 17px; border: none;">
@@ -217,6 +200,195 @@
                 </ul>
             </div>
         </div>
+        
+            
+            <div id="content_GameVictoriousTexture" style="top:0;">
+        <div id="home_featured_banners">
+            <div class="scroller4">
+                <div class="scroller-inner">
+                    <div class="window">
+                        <ol class="teaser-items">
+												
+							<li id="holidaybanner" style="background:#000;max-height:650px;">
+								<div class="banner_copy_vertical_left" style="width:51%;max-width:500px;"> 
+									<h2 class="headline" style="color:#f0e000;">
+										It's Not Too Late.
+									</h2>
+									<p class="subhead">
+										You can still find gifts for gaming! Save up to $250 on select Alienware ships fast systems.​
+									</p>	
+									<p class="cta">
+										<a href="http://www.alienware.com/landings/promotions.aspx">Start Gaming <img src="http://image.alienware.com/images/landings/sprites/button-icon.png" alt=">"/></a>
+									</p>									
+								</div>
+                                <a href="http://www.alienware.com/landings/promotions.aspx"><div class="banner_image_fullsize">
+									<img style="margin:0;float:right;" src="http://image.alienware.com/images/homepage_eye/2014-12/alienware-homepage-itsnottoolate-20141212.jpg">
+								</div></a>
+                            </li>								
+							
+												
+							<li style="background:#000;max-height:650px;">
+								<div class="banner_copy_vertical_left_noJS" style="left:0;padding:1%;top:initial;bottom:0 !important; min-width:300px;max-width:900px;min-height:none !imporant;width:73%;background:url('http://image.alienware.com/images/homepage_eye/2014-10/AMD_Box.png') no-repeat 0 0 transparent;background-size:100%;"> 
+									<h2 class="headline">
+										 NEVER SETTLE SPACE EDITION
+									</h2>
+									<p class="subhead" style="width:67%;padding:0;">
+										Load up your Alienware system with the AMD Radeon™ graphics card of your choice and unlock two great levels of rewards.
+									</p>	
+									<p class="cta">
+										<a href="http://www.alienware.com/landings/amdbundle.aspx">Learn More <img src="http://image.alienware.com/images/landings/sprites/button-icon.png" alt=">"/></a>
+									</p>									
+								</div>
+                                <a href="http://www.alienware.com/landings/amdbundle.aspx"><div class="banner_image_horizontal" style="width:100%;padding:0;display:block;overflow:hidden;">
+									<img style="min-width:100%;float:right;max-height:none;margin-top:-4%;" src="http://image.alienware.com/images/homepage_eye/2014-10/alienware-homepage-amd-spaceedition-bundle-20141009.jpg">
+								</div></a>
+                            </li>	
+							
+												
+							<li id="holidaybanner" style="background:#000;max-height:650px;">
+								<div class="banner_copy_vertical_full_image_banner" style="width:31%;"> 
+									<h2 class="headline">
+										The last thing you want is another sweater.
+									</h2>
+									<p class="subhead">
+										Our awesome lineup of powerful new Alienware systems are the ultimate gifts for them, or for you.
+									</p>	
+									<p class="onepx-box-blue-cta">
+										<a href="http://www.alienware.com/landings/promotions.aspx">Start Gaming</a>
+									</p>									
+								</div>
+                                <a href="http://www.alienware.com/landings/promotions.aspx"><div class="banner_image_fullsize">
+									<img class="full_sized_image" style="margin:0;" src="http://image.alienware.com/images/homepage_eye/2014-11/alienware-homepage-holiday-global-creative-13-20141126.jpg">
+								</div></a>
+                            </li>								
+                       </ol>
+                    </div>
+                    <div class="teaser-header" id="buttons">
+						<ol>
+                            <li><a href="javascript:;"></a></li>
+                            <li><a href="javascript:;" id="button2"></a></li>
+                            <li><a href="javascript:;" id="button3"></a></li>
+						</ol>
+                    </div>
+                    <div class="slideshow-controls" id="arrows">
+                        <ul>
+							<li><a rel="prev" class="prev" href="javascript:;"></a></li>
+							<li class="rightArrow"><a rel="next" class="next" href="javascript:;"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>           
+        </div>
+		
+		<div id="homepage_buckets">
+			<div id="bucket1" class="homepage_bucket">
+				<a href="http://www.alienware.com/landings/laptops.aspx">
+					<img src="http://image.alienware.com/images/global_images/alienware-homepage-bucket-laptops-219x116.jpg" class="bucket_image" alt="Shop Gaming Laptops"/>
+					<div class="bucket_label">
+						Laptops
+					</div>
+				</a>
+			</div>
+			<div id="bucket2" class="homepage_bucket">
+				<a href="http://www.alienware.com/Landings/desktops.aspx">
+					<img src="http://image.alienware.com/images/global_images/alienware-homepage-bucket-desktops-219x116.jpg" class="bucket_image" alt="Shop Gaming Desktops"/>
+					<div class="bucket_label">
+						Desktops
+					</div>
+				</a>
+			</div>
+			<div id="bucket3" class="homepage_bucket">
+				<a href="http://www.alienware.com/landings/promotions.aspx">
+					<img src="http://image.alienware.com/images/global_images/alienware-homepage-bucket-deals-219x116.jpg" class="bucket_image" alt="Shop Featured Deals"/>
+					<div class="bucket_label" id="deals">
+						Deals
+					</div>
+				</a>
+			</div>
+			<div id="bucket4" class="homepage_bucket">
+				<a href="http://www.alienware.com/Landings/peripherals.aspx">
+					<img src="http://image.alienware.com/images/global_images/alienware-homepage-bucket-accessories-219x116.jpg" class="bucket_image" alt="Shop Gaming Accessories"/>
+					<div class="bucket_label">
+						Accessories
+					</div>
+				</a>
+			</div>
+		</div>
+	</div>
+	
+	
+	<div id="lowerNav_GameVictorious">
+					<div id="globalization_GameVictorious" class="far_right">
+                <ul>
+                    <li><h4><span class="flag_unitedstates float_left" style="margin-top:4px;"></span>United States</a></h4>
+                        <div class="global">
+                        <ul class="col1">
+                            <li><a href="http://www.alienware.com.au"><span class="flag_australia float_left" style="margin-top:2px;"></span>Australia</a></li>
+                            <li><a href="http://www.alienware.ca"><span class="flag_canada float_left" style="margin-top:2px;"></span>Canada</a></li>
+                            <li><a href="http://www.alienware.fr"><span class="flag_france float_left" style="margin-top:2px;"></span>France</a></li>
+                            <li><a href="http://www.alienware.de"><span class="flag_germany float_left" style="margin-top:2px;"></span>Germany</a></li>
+                            <li><a href="http://www.dell.pl/alienware"><span class="flag_poland float_left" style="margin-top:2px;"></span>Poland</a></li>
+                            
+                        </ul>
+                        <ul class="col2">
+                            <li><a href="http://www.alienware.co.uk"><span class="flag_uk float_left" style="margin-top:2px;"></span>United Kingdom</a></li>
+                            <li><a href="http://www.alienware.ie"><span class="flag_ireland float_left" style="margin-top:2px;"></span>Ireland</a></li>
+                            <li><a href="http://www.alienware.it"><span class="flag_italy float_left" style="margin-top:2px;"></span>Italy</a></li>
+                            <li><a href="http://www.alienware.at"><span class="flag_austria float_left" style="margin-top:2px;"></span>Austria</a></li>
+                            <li><a href="http://www.alienware.co.nz"><span class="flag_newzealand float_left" style="margin-top:2px;"></span>New Zealand</a></li>
+                            
+                        </ul>
+                        <ul class="col3">                    
+                            <li><a href="http://www.alienware.com"><span class="flag_unitedstates float_left" style="margin-top:2px;"></span>United States</a></li>
+                            <li><a href="http://www.alienware.com/mx/"><span class="flag_mexico float_left" style="margin-top:2px;"></span>Mexico</a></li>
+                            <li><a href="http://www.alienware.nl"><span class="flag_netherlands float_left" style="margin-top:2px;"></span>Netherlands</a></li>
+                            <li><a href="http://www.alienware.ch"><span class="flag_switzerland float_left" style="margin-top:2px;"></span>Switzerland</a></li>
+                            <li><a href="http://www.alienware.es"><span class="flag_spain float_left" style="margin-top:2px;"></span>Spain</a></li>
+                            <li><a href="http://www.alienware.be"><span class="flag_belgium float_left" style="margin-top:2px;"></span>Belgium</a></li>
+                                                
+                        </ul>
+                        <ul class="col4">                    
+                            <li><a href="http://www.alienware.se"><span class="flag_sweden float_left" style="margin-top:2px;"></span>Sweden</a></li>
+                            <li><a href="http://www.dell.no/alienware"><span class="flag_norway float_left" style="margin-top:2px;"></span>Norway</a></li>
+                            <li><a href="http://www.alienware.dk"><span class="flag_denmark float_left" style="margin-top:2px;"></span>Denmark</a></li>
+                            <li><a href="http://www.alienware.com.sg"><span class="flag_singapore float_left" style="margin-top:2px;"></span>Singapore</a></li>
+                            <li><a href="http://www.alienware.co.in"><span class="flag_india float_left" style="margin-top:2px;"></span>India</a></li>
+                            
+                        </ul>
+                        <ul class="col5">                    
+                            <li><a href="http://www.alienware.com.hk"><span class="flag_hongkong float_left" style="margin-top:2px;"></span>Hong Kong</a></li>
+                            <li><a href="http://www.alienware.com.cn"><span class="flag_china float_left" style="margin-top:2px;"></span>China</a></li>
+                            <li><a href="http://www.alienware.kr"><span class="flag_korea float_left" style="margin-top:2px;"></span>Korea</a></li>
+                            <li><a href="http://www.alienware.jp"><span class="flag_japan float_left" style="margin-top:2px;"></span>Japan</a></li>
+                            <li><a href="http://www.alienware.com.my"><span class="flag_malaysia float_left" style="margin-top:2px;"></span>Malaysia</a></li>
+                            
+                        </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+	
+			<ul class="footer_links_list">
+    			<li class="separator_gv"><a class="first_link" href="http://www.dell.com/content/topics/global.aspx/policy/en/policy?c=us&cs=&l=en&s=gen&~section=000">Privacy</a></li>
+                <li class="separator_gv"><a href="http://www.alienware.com/company/disclaimer.aspx">Disclaimer</a></li>
+                <li class="separator_gv"><a href="http://www.dell.com/content/topics/global.aspx/policy/en/policy?c=us&l=en&s=gen&~section=007" target="_blank">Terms &amp; Conditions</a></li>
+				<li class="separator_gv"><a href="https://app.dell.com/consumer/enroll/alienware_victorious/signup.cfm" target="_blank">Alienware Insider Sign-up</a></li>
+				<li class="separator_gv footer_text"><strong>Order Online or Call 1.800.Alienware</strong>  (1-800-254-3692)</li>
+               
+        	</ul> 
+	</div>
+	<div id="footer">
+		            <div class="copyright">
+                Copyright &copy; 2014 Alienware Corporation. All rights reserved.
+            </div>
+            <br />
+            <div  class="copyright" style="width:850px; margin-left:50px; margin-right:50px; text-align:center;">
+	    	
+            
+            </div>
+            
+	</div>
+        
     </div>
 </body>
 </html>

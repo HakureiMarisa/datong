@@ -28,10 +28,12 @@ class SiteController extends Controller{
     public function actionIndex(){
         // renders the view file 'protected/views/site/index.php'
         // using the default layout 'protected/views/layouts/main.php'
+        $this->layout = FALSE;
         $c = new CDbCriteria();
         $c->with = 'menus';
         $c->addCondition(new CDbExpression('ISNULL(t.pid)'));
         $m = Menu::model()->findAll($c);
+
         $this->render('index', array(
                         'menus' => $m
         ));
