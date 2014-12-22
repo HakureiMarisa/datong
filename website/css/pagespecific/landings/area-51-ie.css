@@ -1,0 +1,11 @@
+.col1, .col2, .systems, .processor-hover-button, #processor-image1 {float:left;}
+.system-name				{position:relative;}
+#system4 .system-name		{bottom:7%;}
+.col2						{float:none;}
+.shape-copy					{z-index:5;}
+#cover, #insidesystem		{min-width:66%;}
+#cover						{display:block;}	
+.full-width-image			{max-width:130%;}
+#system1 .system-info-line, #system2 .system-info-line	{left:218px;}
+.info-box					{z-index:10;}
+#system1 .info, #system2 .info	{left:-160px;}
