@@ -6,6 +6,9 @@
 // This is the main Web application configuration. Any writable
 // CWebApplication properties can be configured here.
 return array(
+    'aliases' => array(
+                    'bootstrap' => 'ext.bootstrap'
+    ),
 	'basePath'=>dirname(__FILE__).DIRECTORY_SEPARATOR.'..',
 	'name'=>'My Web Application',
 
@@ -16,25 +19,34 @@ return array(
 	'import'=>array(
 		'application.models.*',
 		'application.components.*',
+        'bootstrap.behaviors.*',
+        'bootstrap.helpers.*',
+        'bootstrap.widgets.*'
 	),
 
 	'modules'=>array(
 		// uncomment the following to enable the Gii tool
-		/*
 		'gii'=>array(
+            'generatorPaths' => array(
+                'bootstrap.gii'
+            ),
 			'class'=>'system.gii.GiiModule',
-			'password'=>'Enter Your Password Here',
+			'password'=>'123',
 			// If removed, Gii defaults to localhost only. Edit carefully to taste.
 			'ipFilters'=>array('127.0.0.1','::1'),
 		),
-		*/
+        'admin',
 	),
 
 	// application components
 	'components'=>array(
+        'bootstrap' => array(
+                        'class' => 'bootstrap.components.BsApi'
+        ),
 		'user'=>array(
 			// enable cookie-based authentication
 			'allowAutoLogin'=>true,
+            'loginUrl' => array('admin/site/login'),
 		),
 		// uncomment the following to enable URLs in path-format
 		/*
@@ -61,10 +73,11 @@ return array(
 		                'enableProfiling' => true,    //配置1
 		                'enableParamLogging' => true,    //配置2
 		),
+	                /*
 		'errorHandler'=>array(
 			// use 'site/error' action to display errors
 			'errorAction'=>'site/error',
-		),
+		),*//*
 		'log'=>array(
 			'class'=>'CLogRouter',
 			'routes'=>array(
@@ -73,13 +86,13 @@ return array(
                     //'ipFilters'=>array('127.0.0.1','192.168.1.215'),
                 ),	
 				// uncomment the following to show log messages on web pages
-				/*
+				
 				array(
 					'class'=>'CWebLogRoute',
 				),
-				*/
+				
 			),
-		),
+		),*/
 	),
 
 	// application-level parameters that can be accessed

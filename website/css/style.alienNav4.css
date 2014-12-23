@@ -156,3 +156,24 @@ div#innerHeader #headerAddContent #windows_recommended			{color:#cacaca;font-fam
 #TopNavigation_v2c ul .butt_Follow_Alienware ul div li a 							{display:block;width:173px;height:34px;color:#ffffff;padding:0px 7px 0px 12px; margin:0px; text-align:left; font-size:12px;font-weight:normal; line-height:34px; background:none; text-decoration:none;border-radius: 0px 0px 0px 0px;-moz-border-radius-topleft: 0px; -moz-border-radius-topright: 0px; -moz-border-radius-bottomright: 0px; -moz-border-radius-bottomleft: 0px; -webkit-border-top-left-radius: 0px; -webkit-border-top-right-radius: 0px; -webkit-border-bottom-left-radius: 0px; -webkit-border-bottom-right-radius: 0px; outline:none;behavior: url(../Include_Pages/css/rounded-corners/PIE.htc); cursor:pointer;}
 #TopNavigation_v2c ul .butt_Follow_Alienware ul div li a:hover 						{color:#25e9eb; background:#191919;}
 #TopNavigation_v2c ul .butt_Follow_Alienware ul div li a:active 						{color:#25e9eb; background:#191919;}
+
+#TopNavigation_v2c #jsddm>li{width: 18%; float: left;}
+#TopNavigation_v2c #jsddm>li.left{margin-right: 7%;}
+#TopNavigation_v2c #jsddm>li.right{margin-left: 7%;}
+#TopNavigation_v2c #jsddm>li>a{display:block; width:100%; height:34px; margin:0px; font-family:"PillAlt600mgBold",sans-serif; font-size:16px;font-weight:normal; letter-spacing: 1px;line-height:17px;color:#cacaca; text-shadow:0px 0px 10px #242018;float:left; position:relative;border:none; text-decoration:none; background:none; border-radius: 3px 3px 0px 0px;-moz-border-radius: 3px 3px 0px 0px; -webkit-border-radius: 3px 3px 0px 0px; -khtml-border-radius: 3px 3px 0px 0px;behavior: url(../Include_Pages/css/rounded-corners/PIE.htc); outline:none; z-index:100;}
+#TopNavigation_v2c #jsddm>li.right>a{text-align: right;}
+#TopNavigation_v2c #jsddm>li>ul{display: none;}
+#TopNavigation_v2c ul li ul div.bottom_cap {
+display: block;
+width: 192px;
+height: auto;
+margin: 22px 0px 0px 0px;
+padding: 5px 0px 10px 0px;
+background: rgba(01,01,01, .80);
+z-index: 80;
+border-radius: 5px 0 5px 5px;
+behavior: url(/styles/rounded-corners/PIE.htc);
+}
+#TopNavigation_v2c ul li ul div li a               {display:block;width:173px;height:34px;color:#ffffff;padding:0px 7px 0px 12px; margin:0px; text-align:left; font-size:12px;font-weight:normal; line-height:34px; background:none; text-decoration:none;border-radius: 0px 0px 0px 0px;-moz-border-radius-topleft: 0px; -moz-border-radius-topright: 0px; -moz-border-radius-bottomright: 0px; -moz-border-radius-bottomleft: 0px; -webkit-border-top-left-radius: 0px; -webkit-border-top-right-radius: 0px; -webkit-border-bottom-left-radius: 0px; -webkit-border-bottom-right-radius: 0px; outline:none;behavior: url(../Include_Pages/css/rounded-corners/PIE.htc); cursor:pointer;}
+#TopNavigation_v2c ul li ul div li a:hover             {color:#25e9eb; background:#191919;}
+#TopNavigation_v2c ul li ul div li a:active        {color:#25e9eb; background:#191919;}

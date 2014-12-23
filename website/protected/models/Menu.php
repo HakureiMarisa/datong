@@ -105,4 +105,20 @@ class Menu extends CActiveRecord
 	{
 		return parent::model($className);
 	}
+	
+	public function afterValidate(){
+	    parent::afterValidate();
+	    if (!$this->pid){
+	        unset($this->pid);
+	    }
+	}
+	
+	public static function parents_dropdown($id){
+	    $c = new CDbCriteria();
+	    if ($id){
+	        $c->addCondition(array('id !=' => $id));
+	    }
+	    $models = Menu::model()->findAll();
+	    return array('' => '顶级') + CHtml::listData($models, 'id', 'name');
+	}
 }

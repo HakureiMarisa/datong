@@ -1,6 +1,7 @@
 <?php
 
 class SiteController extends Controller{
+    
     /**
      * Declares class-based actions.
      */
@@ -17,25 +18,29 @@ class SiteController extends Controller{
             // They can be accessed via: index.php?r=site/page&view=FileName
             'page' => array(
                 'class' => 'CViewAction' 
-            ) 
+            ),
+            'test' => 'application.controllers.actions.Test' 
         );
     }
     
-    /**
-     * This is the default 'index' action that is invoked
-     * when an action is not explicitly requested by users.
-     */
-    public function actionIndex(){
-        // renders the view file 'protected/views/site/index.php'
-        // using the default layout 'protected/views/layouts/main.php'
-        $this->layout = FALSE;
-        $c = new CDbCriteria();
-        $c->with = 'menus';
-        $c->addCondition(new CDbExpression('ISNULL(t.pid)'));
-        $m = Menu::model()->findAll($c);
-
+    public function actionIndex(){  
+        $slides = Slide::model()->findAll();    
+        $buckets = Bucket::model()->findAll();
         $this->render('index', array(
-                        'menus' => $m
+                        'slides' => $slides,
+                        'buckets' => $buckets
+        ));
+    }
+    
+    public function actionPage($c){
+        $this->layout = 'page';
+        $category = Category::model()->findByAttributes(array('code' => $c));
+        
+        $categories = Category::model()->findAllByAttributes(array('code' => $c));
+        $products = Product::model()->findAllByAttributes(array('category_id' => $category->id));
+        $this->render('page', array(
+                        'category' => $category,
+                        'products' => $products
         ));
     }
     
@@ -59,11 +64,8 @@ class SiteController extends Controller{
         if(isset($_POST['ContactForm'])){
             $model->attributes = $_POST['ContactForm'];
             if($model->validate()){
-                $name = '=?UTF-8?B?' . base64_encode($model->name) . '?=';
-                $subject = '=?UTF-8?B?' . base64_encode($model->subject) . '?=';
-                $headers = "From: $name <{$model->email}>\r\n" . "Reply-To: {$model->email}\r\n" . "MIME-Version: 1.0\r\n" . "Content-Type: text/plain; charset=UTF-8";
-                
-                mail(Yii::app()->params['adminEmail'], $subject, $model->body, $headers);
+                $headers = "From: {$model->email}\r\nReply-To: {$model->email}";
+                mail(Yii::app()->params['adminEmail'], $model->subject, $model->body, $headers);
                 Yii::app()->user->setFlash('contact', 'Thank you for contacting us. We will respond to you as soon as possible.');
                 $this->refresh();
             }
@@ -77,6 +79,8 @@ class SiteController extends Controller{
      * Displays the login page
      */
     public function actionLogin(){
+        if(!defined('CRYPT_BLOWFISH') || !CRYPT_BLOWFISH) throw new CHttpException(500, "This application requires that PHP was compiled with Blowfish support for crypt().");
+        
         $model = new LoginForm();
         
         // if it is ajax validation request
